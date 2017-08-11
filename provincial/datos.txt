@@ -1,0 +1,3 @@
+
+datos varios.
+UPDATE `c0740032_algo`.`mesa` SET `verificado` = '1' WHERE `mesa`.`id` =3;

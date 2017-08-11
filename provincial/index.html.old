@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Proyecto Sur">
+    <meta name="author" content="Hueso">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>PASO 2017</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/estilos.css" rel="stylesheet" type="text/css" >
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  </head>
+  <body class="color_fondo">
+	<header>
+		<div class="container">
+			<div class="col-xs-12 col-sm-3 col-md-3 navbar-brand">
+				<div class="escudo"><img src="images/escudo_Santa_Cruz.svg" class="img-responsive"/></div>
+			  <div class="santa" ><b class="prov">lista 83 </b>Proyecto Sur</div>
+			 </div>
+			<div class="col-xs-12 col-sm-9 col-md-9">
+				<h5 class="sub-brand">Escrutinio Provisorio Elecciones PASO 2017</h5>
+			</div>
+
+		</div>
+    </header>
+	<!-- CONTENIDO -->
+	<main class="main-container" role="main">
+		<div class="container">
+		<div class="cargafinalizada">------</a></div>
+			<div class="row">
+				<div id="contenedor" class="col-xs-12 col-sm-12 col-md-12">
+					<div id="combobox" class="hidden-print">
+			<select id="menu_localidad" onChange="mostrarInfo(this.value)" class="form-control input-lg no-scroll" data-style="btn-primary">
+				<option value=0 >Total Provincial</option>
+				<option value=51 >28 de Noviembre</option>
+				<option value=29 >Bajo Caracoles</option>
+				<option value=19 >Caleta Olivia</option>
+				<option value=21 >Cañadón Seco</option>
+				<option value=32 >Com. L. Piedra Buena</option>
+               	<option value=28 >El Calafate</option>
+				<option value=37 >El Chaltén</option>
+				<option value=31 >Gobernador Gregores</option>
+				<option value=26 >Gobernador Moyano</option>
+				<option value=47 >Jaramillo</option>
+				<!--option value=23 >Koluel Kaike</option>-->
+				<option value=48 >La Esperanza</option>
+				<option value=30 >Lago Posadas</option>
+				<option value=24 >Las Heras</option>
+				<option value=41 >Los Antiguos</option>
+				<option value=44 >Perito Moreno</option>
+				<option value=22 >Pico Truncado</option>
+				<option value=45 >Pto. Deseado</option>
+				<option value=42 >Pto. San Julián</option>
+				<option value=34 >Pto. Santa Cruz</option>
+				<option value=38 >Río Gallegos</option>
+				<option value=49 >Río Turbio</option>
+				<option value=52 >Tamel Aike</option>
+				<option value=36 >Tres Lagos</option>
+				</select>					</div>
+					
+<div id="datos" class="">
+						<!--<div id="datos">-->
+
+<!--PARTIDOS-->
+<input name="localidad" id="localidad" value="0"  type="hidden"/>
+
+		<div id="titulo_categoria">Total Provincial</div>
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs nav-justified" role="tablist">
+		<li class="tab_gobernador active" role="presentation"><a href="#gobernador"
+      aria-controls="gobernador" role="tab" data-toggle="tab" class="tit_pestana">SENADOR</a></li>
+		<li class="tab_dip_provincial" role="presentation"><a href="#dip_provincial"
+      aria-controls="dip_provincial" role="tab" data-toggle="tab" class="tit_pestana">DIP. NACIONAL</a></li>
+		</ul>
+		<!-- Tab panes -->
+			<div class="tab-content">
+<!-- TAB 1-->
+						<div role="tabpanel" class="tab-pane active" id="gobernador">
+							<div class="titulo_tab">Senador</div>
+							<div class="col-xs-12 col-sm-12 col-md-9">
+							<div id="pai" class="pai">
+<!--FIN DATOS -->
+<!-- DATOS -->
+								<div class="datos" contagem="100">
+									<div class="images"><img src="img/partido_mas.png" alt="MAS" width="110" height="56"></div>
+									<div class="contenedor-barra">
+										<div class="titulo">83 / PROYECTO SUR</div>
+										<div class="progress">
+										  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo $porcent ?>">
+											<span class="sr-only"><?php echo $porcent ?></span>
+										  </div>
+										</div>
+										<div class="porcentaje"><span>50%</span></div>
+										<div class="cantidad2">(200 Votos)</div>
+										<div class="listas">
+												<div class="no_sublemas ">
+													<div class="partidos">DANIEL PERALTA</div>
+												</div>
+										</div>
+									</div>
+								</div>
+<!--FIN DATOS -->
+<!-- DATOS -->
+<div class="datos" contagem="46.54">
+  <div class="images"><img src="img/partido502.png" alt="UNION" width="110" height="56"></div>
+  <div class="contenedor-barra">
+    <div class="titulo">701 / FRENTE PARA LA VICTORIA</div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="46.54" aria-valuemin="0" aria-valuemax="100" style="width:46.54%">
+      <span class="sr-only">46.54%</span>
+      </div>
+    </div>
+      <div class="porcentaje">46.54%</div>
+      <div class="cantidad2">(70669 Votos)</div>
+    <div class="listas">
+        <div class="sublemas" data-toggle="tooltip" data-placement="left" title="OSVALDO FRANCISCO">
+          <div class="partidos">Ianni Ana Maria</div>
+          <div class="progress2">
+            <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:32.97%">
+            </div>
+          </div>
+          <div class="cantidad">(7557 Votos)</div>
+          <div class="porcentaje2">32.97%</div>
+
+        </div>
+        <div class="sublemas" data-toggle="tooltip" data-placement="left" title="COSTA EDUARDO">
+          <div class="partidos">Julio Gutiérrez</div>
+          <div class="progress2">
+            <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:67.03%">
+            </div>
+          </div>
+          <div class="cantidad">(63112 Votos)</div>
+          <div class="porcentaje2">67.03%</div>
+        </div>
+      </div>
+  </div>
+</div>
+<!--FIN DATOS -->
+<!-- DATOS -->
+								<div class="datos" contagem="46.54">
+									<div class="images"><img src="img/partido502.png" alt="UNION" width="110" height="56"></div>
+									<div class="contenedor-barra">
+										<div class="titulo">701 / Unión para Vivir Mejor - CAMBIEMOS</div>
+										<div class="progress">
+										  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="46.54" aria-valuemin="0" aria-valuemax="100" style="width:46.54%">
+											<span class="sr-only">46.54%</span>
+										  </div>
+										</div>
+											<div class="porcentaje">46.54%</div>
+											<div class="cantidad2">(70669 Votos)</div>
+										<div class="listas">
+												<div class="sublemas" data-toggle="tooltip" data-placement="left" title="OSVALDO FRANCISCO">
+													<div class="partidos">Eduardo Costa</div>
+													<div class="progress2">
+													  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:32.97%">
+													  </div>
+													</div>
+													<div class="cantidad">(7557 Votos)</div>
+													<div class="porcentaje2">32.97%</div>
+
+												</div>
+												<div class="sublemas" data-toggle="tooltip" data-placement="left" title="COSTA EDUARDO">
+													<div class="partidos">Carlos Prades</div>
+													<div class="progress2">
+													  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:67.03%">
+													  </div>
+													</div>
+													<div class="cantidad">(63112 Votos)</div>
+													<div class="porcentaje2">67.03%</div>
+												</div>
+											</div>
+									</div>
+								</div>
+<!--FIN DATOS -->
+<!-- DATOS -->
+<div class="datos" contagem="100">
+  <div class="images"><img src="img/partido_mas.png" alt="MAS" width="110" height="56"></div>
+  <div class="contenedor-barra">
+    <div class="titulo">176 / FRENTE RENOVADOR AUTENTICO</div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+      <span class="sr-only">50%</span>
+      </div>
+    </div>
+    <div class="porcentaje"><span>50%</span></div>
+    <div class="cantidad2">(200 Votos)</div>
+    <div class="listas">
+        <div class="no_sublemas ">
+          <div class="partidos">Jose Blassiotto</div>
+        </div>
+    </div>
+  </div>
+</div>
+<!--FIN DATOS -->
+  <!-- DATOS -->
+  <div class="datos" contagem="100">
+    <div class="images"><img src="img/partido_mas.png" alt="MAS" width="110" height="56"></div>
+    <div class="contenedor-barra">
+      <div class="titulo">-- / (MST) y Nuevo Más</div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+        <span class="sr-only">50%</span>
+        </div>
+      </div>
+      <div class="porcentaje"><span>50%</span></div>
+      <div class="cantidad2">(200 Votos)</div>
+      <div class="listas">
+          <div class="no_sublemas ">
+            <div class="partidos">Emilio Poliak</div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!--FIN DATOS -->
+  <!-- DATOS -->
+  <div class="datos" contagem="100">
+    <div class="images"><img src="img/partido_mas.png" alt="MAS" width="110" height="56"></div>
+    <div class="contenedor-barra">
+      <div class="titulo">-- / FIT</div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+        <span class="sr-only">50%</span>
+        </div>
+      </div>
+      <div class="porcentaje"><span>50%</span></div>
+      <div class="cantidad2">(200 Votos)</div>
+      <div class="listas">
+          <div class="no_sublemas ">
+            <div class="partidos">Miguel del Plá</div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!--FIN DATOS -->
+							</div>
+							<div id="titulo_imp">
+								<div class="hora">Ultima actualizaci&oacute;n &nbsp17:15 hs.</div>
+							</div>
+							</div>
+								<div class="col-xs-12 col-sm-12 col-md-3">
+									<div id="totales">
+										<!--<div id="totales">	-->
+		<div class="titulo" >EMPADRONADOS</div>
+		<div class="totales">
+			<div class="tr">
+				<div class="cuadro">Totales:</div>
+				<div class="cuadro1">239130</div>
+			</div>
+			<div class="tr">
+				<div class="cuadro">Votaron:</div>
+				<div class="cuadro1">163701</div>
+				<div class="cuadro2">68.43%</div>
+			</div>
+		</div>
+		<div class="titulo" >MESAS</div>
+		<div class="totales">
+				<div class="tr">
+					<div class="cuadro">Totales:</div>
+					<div class="cuadro1">829</div>
+				  </div>
+				<div class="tr">
+					<div class="cuadro">Escrutadas:</div>
+					<div class="cuadro1">719</div>
+					<div class="cuadro2">88.88%</div>
+				  </div>
+		</div>
+		<div class="titulo" >VOTOS</div>
+		<div class="totales">
+				<div class="tr">
+					<div class="cuadro">Afirmativos:</div>
+					<div class="cuadro1">151840</div>
+				<div class="cuadro2">92.75%</div>
+				</div>
+				<div class="tr">
+					<div class="cuadro">Blancos:</div>
+					<div class="cuadro1">9631</div>
+					<div class="cuadro2">5.88%</div>
+				</div>
+				<div class="tr">
+					<div class="cuadro">Nulos:</div>
+					<div class="cuadro1">2022</div>
+					<div class="cuadro2">1.24%</div>
+				</div>
+				<div class="tr">
+					<div class="cuadro">Recurridos:</div>
+					<div class="cuadro1">176</div>
+					<div class="cuadro2">0.11%</div>
+				</div>
+				<div class="tr">
+					<div class="cuadro">Impugnados:</div>
+					<div class="cuadro1">32</div>
+					<div class="cuadro2">0.02%</div>
+				</div>
+		</div>
+	
+			</div>
+		</div>
+							<script src="js/ordenar.js" type="text/javascript"></script>
+						</div>
+<!-- TAB 2-->
+						<div role="tabpanel" class="tab-pane" id="dip_provincial">
+						<div class="titulo_tab">Diputado Nacional</div>
+						<div class="col-xs-12 col-sm-12 col-md-9">
+							<div id="pai2" class="pai">
+<!--FIN DATOS -->
+<!-- DATOS -->
+								<div class="datos" contagem="0.18">
+									<div class="images"><img src="img/partido_mas.png" alt="MAS" width="110" height="56"></div>
+									<div class="contenedor-barra">
+										<div class="titulo">83 / PROYECTO SUR </div>
+										<div class="progress">
+										  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0.18" aria-valuemin="0" aria-valuemax="100" style="width:0.18%">
+											<span class="sr-only">0.18%</span>
+										  </div>
+										</div>
+										<div class="porcentaje"><span>0.18%</span></div>
+										<div class="cantidad2">(228 Votos)</div>
+										<div class="listas">
+												<div class="no_sublemas ">
+													<div class="partidos">OSVALDO "COLO" PEREZ</div>
+												</div>
+										</div>
+									</div>
+								</div>
+<!--FIN DATOS -->
+<!-- DATOS -->
+								<div class="datos" contagem="50.16">
+									<div class="images"><img src="img/partido501.png" alt="FPVS" width="110" height="56"></div>
+									<div class="contenedor-barra">
+										<div class="titulo">701 / Frente para la Victoria Santacruceña</div>
+										<div class="progress">
+										  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50.16" aria-valuemin="0" aria-valuemax="100" style="width:50.16%">
+											<span class="sr-only">50.16%</span>
+										  </div>
+										</div>
+										<div class="porcentaje"><span>50.16%</span></div>
+										<div class="cantidad2">(65109 Votos)</div>
+										<div class="listas">
+												<div class="sublemas" data-toggle="tooltip" data-placement="left" title="VICTORIA ALEJANDRO">
+													<div class="partidos">Juan Vázquez</div>
+													<div class="progress2">
+													  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:7.13%">
+													  </div>
+													</div>
+													<div class="cantidad">(4644 Votos)</div>
+													<div class="porcentaje2">7.13%</div>
+												</div>
+												<div class="sublemas" data-toggle="tooltip" data-placement="left" title="PERALTA GABRIELA">
+													<div class="partidos">Claudio Silva</div>
+													<div class="progress2">
+													  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:31.36%">
+													  </div>
+													</div>
+													<div class="cantidad">(20419 Votos)</div>
+													<div class="porcentaje2">31.36%</div>
+
+												</div>
+
+											</div>
+									</div>
+								</div>
+<!--FIN DATOS -->
+<!-- DATOS -->
+								<div class="datos" contagem="44.91">
+									<div class="images"><img src="img/partido502.png" alt="UNION" width="110" height="56"></div>
+									<div class="contenedor-barra">
+										<div class="titulo">701 / Unión para Vivir Mejor</div>
+										<div class="progress">
+										  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="44.91" aria-valuemin="0" aria-valuemax="100" style="width:44.91%">
+											<span class="sr-only">44.91%</span>
+										  </div>
+										</div>
+											<div class="porcentaje">44.91%</div>
+											<div class="cantidad2">(58292 Votos)</div>
+											<div class="listas">
+												<div class="sublemas" data-toggle="tooltip" data-placement="left" title="TERRAZ GERARDO">
+													<div class="partidos">Roxana Reyes</div>
+													<div class="progress2">
+													  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:31.83%">
+													  </div>
+													</div>
+													<div class="cantidad">(18557 Votos)</div>
+													<div class="porcentaje2">31.83%</div>
+												</div>
+												<div class="sublemas" data-toggle="tooltip" data-placement="left" title="LOZANO JOSE">
+													<div class="partidos">Paula Obaya</div>
+													<div class="progress2">
+													  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:18.89%">
+													  </div>
+													</div>
+													<div class="cantidad">(11014 Votos)</div>
+													<div class="porcentaje2">18.89%</div>
+												</div>
+												<div class="sublemas" data-toggle="tooltip" data-placement="left" title="BLASSIOTTO	JOSE">
+													<div class="partidos">Pablo Pato Fadul</div>
+													<div class="progress2">
+													  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:17.35%">
+													  </div>
+													</div>
+													<div class="cantidad">(10113 Votos)</div>
+													<div class="porcentaje2">17.35%</div>
+												</div>
+												<div class="sublemas" data-toggle="tooltip" data-placement="left" title="MURIETE CARLOS">
+													<div class="partidos">Sandro Levín</div>
+													<div class="progress2">
+													  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:13.29%">
+													  </div>
+													</div>
+													<div class="cantidad">(7745 Votos)</div>
+													<div class="porcentaje2">13.29%</div>
+												</div>
+												<div class="sublemas" data-toggle="tooltip" data-placement="left" title="MESTELAN GABRIELA">
+													<div class="partidos">ENCUENTRO CIUDADANO POR SANTA CRUZ</div>
+													<div class="progress2">
+													  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:6.41%">
+													  </div>
+													</div>
+													<div class="cantidad">(3738 Votos)</div>
+													<div class="porcentaje2">6.41%</div>
+												</div>
+												<div class="sublemas" data-toggle="tooltip" data-placement="left" title="VIDAL HECTOR">
+													<div class="partidos">MEJOR GESTION </div>
+													<div class="progress2">
+													  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:4.86%">
+													  </div>
+													</div>
+													<div class="cantidad">(2833 Votos)</div>
+													<div class="porcentaje2">4.86%</div>
+												</div>
+												<div class="sublemas" data-toggle="tooltip" data-placement="left" title="GONZALEZ LUIS HECTOR">
+													<div class="partidos">UNION PARA EL CAMBIO </div>
+													<div class="progress2">
+													  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:7.36%">
+													  </div>
+													</div>
+													<div class="cantidad">(4292 Votos)</div>
+													<div class="porcentaje2">7.36%</div>
+
+												</div>
+											</div>
+									</div>
+								</div>
+<!--FIN DATOS -->
+<!-- DATOS -->
+								<div class="datos" contagem="50.16">
+									<div class="images"><img src="img/partido501.png" alt="FPVS" width="110" height="56"></div>
+									<div class="contenedor-barra">
+										<div class="titulo">702 / Frente para la Victoria Santacruceña</div>
+										<div class="progress">
+										  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50.16" aria-valuemin="0" aria-valuemax="100" style="width:50.16%">
+											<span class="sr-only">50.16%</span>
+										  </div>
+										</div>
+										<div class="porcentaje"><span>50.16%</span></div>
+										<div class="cantidad2">(65109 Votos)</div>
+										<div class="listas">
+												<div class="sublemas" data-toggle="tooltip" data-placement="left" title="VICTORIA ALEJANDRO">
+													<div class="partidos">POR SIEMPRE SANTA CRUZ</div>
+													<div class="progress2">
+													  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:7.13%">
+													  </div>
+													</div>
+													<div class="cantidad">(4644 Votos)</div>
+													<div class="porcentaje2">7.13%</div>
+												</div>
+												<div class="sublemas" data-toggle="tooltip" data-placement="left" title="PERALTA GABRIELA">
+													<div class="partidos">SANTA CRUZ SOMOS TODOS </div>
+													<div class="progress2">
+													  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:31.36%">
+													  </div>
+													</div>
+													<div class="cantidad">(20419 Votos)</div>
+													<div class="porcentaje2">31.36%</div>
+
+												</div>
+												<div class="sublemas" data-toggle="tooltip" data-placement="left" title="MAZU HORACIO">
+													<div class="partidos">SIEMPRE SANTA CRUZ</div>
+													<div class="progress2">
+													  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:61.51%">
+													  </div>
+													</div>
+													<div class="cantidad">(40046 Votos)</div>
+													<div class="porcentaje2">61.51%</div>
+												</div>
+
+											</div>
+									</div>
+								</div>
+<!--FIN DATOS -->
+<!-- DATOS -->
+								<div class="datos" contagem="4.32">
+									<div class="images"><img src="img/partido_frente_izquierda.png" alt="FIT" width="110" height="56"></div>
+									<div class="contenedor-barra">
+										<div class="titulo">703 / Frente de Izquierda y de los Trabajadores</div>
+										<div class="progress">
+										  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="4.32" aria-valuemin="0" aria-valuemax="100" style="width:4.32%">
+											<span class="sr-only">4.32%</span>
+										  </div>
+										</div>
+										<div class="porcentaje">4.32%</div>
+										<div class="cantidad2">(5603 Votos)</div>
+										<div class="listas">
+												<div class="no_sublemas ">
+													<div class="partidos">DEL PLA MIGUEL ANGEL</div>
+												</div>
+										</div>
+									</div>
+								</div>
+<!--FIN DATOS -->
+							</div>
+							<div id="titulo_imp">
+								<div class="hora">Ultima actualizaci&oacute;n &nbsp17:15 hs.</div>
+							</div>
+						</div>
+							<div class="col-xs-12 col-sm-12 col-md-3">
+								<div id="totales">
+									<!--<div id="totales">	-->
+<div class="titulo" >EMPADRONADOS</div>
+		<div class="totales">
+			<div class="tr">
+				<div class="cuadro">Totales:</div>
+				<div class="cuadro1">239130</div>
+			</div>
+			<div class="tr">
+				<div class="cuadro">Votaron:</div>
+				<div class="cuadro1">163701</div>
+				<div class="cuadro2">68.43%</div>
+			</div>
+		</div>
+		<div class="titulo" >MESAS</div>
+		<div class="totales">
+				<div class="tr">
+					<div class="cuadro">Totales:</div>
+					<div class="cuadro1">829</div>
+				  </div>
+				<div class="tr">
+					<div class="cuadro">Escrutadas:</div>
+					<div class="cuadro1">719</div>
+					<div class="cuadro2">88.88%</div>
+				  </div>
+		</div>
+		<div class="titulo" >VOTOS</div>
+		<div class="totales">
+				<div class="tr">
+					<div class="cuadro">Afirmativos:</div>
+					<div class="cuadro1">129793</div>
+				<div class="cuadro2">79.29%</div>
+				</div>
+				<div class="tr">
+					<div class="cuadro">Blancos:</div>
+					<div class="cuadro1">31676</div>
+					<div class="cuadro2">19.35%</div>
+				</div>
+				<div class="tr">
+					<div class="cuadro">Nulos:</div>
+					<div class="cuadro1">1959</div>
+					<div class="cuadro2">1.20%</div>
+				</div>
+				<div class="tr">
+					<div class="cuadro">Recurridos:</div>
+					<div class="cuadro1">178</div>
+					<div class="cuadro2">0.11%</div>
+				</div>
+				<div class="tr">
+					<div class="cuadro">Impugnados:</div>
+					<div class="cuadro1">37</div>
+					<div class="cuadro2">0.02%</div>
+				</div>
+		</div>
+		<div id="contenedor_mapa" class="col-xs-12 col-sm-12 col-md-12">
+		<!--<div id="contenedor_mapa">-->
+			<div id="mapa">
+				<div id="localidades">
+					<div class="co" data-tip="Caleta Olivia"></div>
+					<div class="lh" data-tip="Las Heras"></div>
+					<div class="pt" data-tip="Pico Truncado"></div>
+					<div class="cc" data-tip="Ca&ntilde;ad&oacute;n Seco"></div>
+					<div class="ja" data-tip="Jaramillo"></div>
+					<div class="pm" data-tip="Perito Moreno"></div>
+					<div class="la" data-tip="Los Antiguos"></div>
+					<div class="bc" data-tip="Bajo Caracoles"></div>
+					<div class="pd" data-tip="Pto. Deseado"></div>
+					<div class="hi" data-tip="Hip&oacute;lito Irigoyen"></div>
+					<div class="gm" data-tip="Gobernador Moyano"></div>
+					<div class="ta" data-tip="Tamel Aike"></div>
+					<div class="gg" data-tip="Gobernador Gregores"></div>
+					<div class="sj" data-tip="Pto. San Juli&aacute;n"></div>
+					<div class="tl" data-tip="Tres Lagos"></div>
+					<div class="ch" data-tip="El Chalt&eacute;n"></div>
+					<div class="pb" data-tip="Com. L. Piedra Buena"></div>
+					<div class="sc" data-tip="Pto. Santa Cruz"></div>
+					<div class="le" data-tip="La Esperanza"></div>
+					<div class="cf" data-tip="El Calafate"></div>
+					<div class="rt" data-tip="R&iacute;o Turbio"></div>
+					<div class="vn" data-tip="28 de Noviembre"></div>
+					<div class="rg" data-tip="R&iacute;o Gallegos"></div>
+				</div>
+			</div>
+		<!--<div id="borde"></div>-->
+			<div id="curvac">
+				<table class="detallemapa">
+					<tbody>
+					<tr>
+						<td class="circulo"><div class="mas"></div></td>
+						<td class="siglas"><div class="par">MAS</div></td>
+						<td class="cifra"></td>
+					</tr>
+					<tr>
+						<td class="circulo"><div class="mst"></div></td>
+						<td class="siglas"><div class="par">MST</div></td>
+						<td class="cifra"></td>
+					</tr>
+					<tr>
+						<td class="circulo"><div class="uvm"></div></td>
+						<td class="siglas"><div class="par">UVM</div></td>
+						<td class="cifra"></td>
+					</tr>
+					<tr>
+						<td class="circulo"><div class="fvs"></div></td>
+						<td class="siglas"><div class="par">FVS</div></td>
+						<td class="cifra"></td>
+					</tr>
+					<tr>
+						<td class="circulo"><div class="fit"></div></td>
+						<td class="siglas"><div class="par">FIT</div></td>
+						<td class="cifra"></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="tituloa">SANTA CRUZ</div>
+			<div class="titulob">LOCALIDADES</div>
+			<div class="titulox">MESAS ESCRUTADAS</div>
+			<div id="datos_mapa"> 	</div>		</div>
+			</div>
+		</div>
+		<script src="js/ordenar2.js" type="text/javascript"></script>
+	</div>
+
+	<!-- FIN DE CONTENIDO -->
+	<footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 informatica">
+              Subsecretar&iacute;a de Inform&aacute;tica - Ministerio Secretar&iacute;a General de la Gobernaci&oacute;n <br> www.santacruz.gov.ar - Gobierno de la Provincia de Santa Cruz
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/function.js"></script>
+  </body>
+</html>
