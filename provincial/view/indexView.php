@@ -4,8 +4,8 @@ include("funciones.php");
 include("head.php");
 include("chamullo.php");
 
-$fecha = "2017-7-10";
-$idEleccion = 1;
+$fecha = "2017-8-13";
+$idEleccion = idEleccionDefecto;
 // $idCiudad = -1 ; // ciudad.
 
 $totalMesa = new EntidadBase("TotalMesas");
@@ -29,6 +29,7 @@ if (!isset($idCiudad) ){
 		$tm = $totalMesa->getBy("idCiudad",$idCiudad);
 		if (isset($tm[0]))	$c = $tm[0]->TotalMesas;
 		else $c=0;
+		
 		$te=$ciudades->getById($idCiudad);
 		$e=$te->habitantes;
 		
@@ -42,7 +43,7 @@ if (!isset($idCiudad) ){
 		foreach($te as $t){
 			$e+=$t->habitantes;
 		}
-	
+		
 	}	
 }
 
@@ -68,11 +69,12 @@ $candidato = new EntidadBase("candidatos");
 // totales generales.
 // fecha 	idcircuito 21	idseccion 7	idDistrito 20	MesasTomadas 	Votantes	TotalVontantes 	VotosBlancos 	
 // VotosNulos 	VotosRecurridos 	VotosInpugnados 
+// $idDistrito,$idseccion,$idcircuito,$idElecion
 
-$datos = $mesa->estadistica_totales(20,7,$idCiudad,$idEleccion);
+$datos = $mesa->estadistica_totales( idDistritoDefecto ,$idCiudad,$idEleccion);
 // var_dump($datos);
 
-$tablalistas = $mesa->estadistica_porlista(20,7,$idCiudad,$idEleccion); // tabla estadistica de todas las listas.
+$tablalistas = $mesa->estadistica_porlista( idDistritoDefecto ,$idCiudad,$idEleccion); // tabla estadistica de todas las listas.
 
 $divTotal = entrada("totaldatos", array(
 "afirmativos" => $datos[0]->Votantes , // cantidad de votantes empadronados.

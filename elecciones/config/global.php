@@ -6,9 +6,10 @@ define("ACCION_DEFECTO", "index");
 define("CONTROLADOR_FIN", "fin");
 define("ACCION_FIN", "gracias");
 
-define("debugmode",true);
+define("debugmode",false);
 
 define("idEleccionDefecto",1); // nro de identificacion de eleccion.
+define("idDistritoDefecto",7); // nro de identificacion de eleccion.
 
 session_name("eleciones");
  

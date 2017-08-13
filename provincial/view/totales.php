@@ -23,7 +23,7 @@ from votosMesas ) as a ";
 $db_mesas = new EntidadBase($totalSql);
 $registros = $db_mesas->getAll(); 
 $t = $registros[2] ;
-// var_dump($t);
+var_dump($t);
 /*
 object(stdClass)#92 (12) { ["id"]=> string(10) "2017-07-10" ["TotalVotantes"]=> NULL ["idCircuito"]=> string(2) "21" 
 ["VotosBlancos"]=> NULL ["VotosNulos"]=> NULL ["VotosRecurridos"]=> NULL ["VotosInpugnados"]=> NULL 

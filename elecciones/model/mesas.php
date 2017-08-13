@@ -31,7 +31,7 @@ class mesas extends EntidadBase{
 					 "idseccion" , "idCircuito" , "idMesa" , "VotosBlancos" , 
 					 "VotosNulos" , "VotosRecurridos" , "VotosInpugnados" ,"enEdicion" );
         
-        $this->defecto = array("TotalVontantes" => 0 , "Votantes" => 0 , "idseccion" => 0 ,
+        $this->defecto = array("TotalVontantes" => 0 , "Votantes" => 0 , "idseccion" => idDistritoDefecto ,
 					"VotosBlancos" => 0, "VotosNulos"  =>0, "VotosRecurridos" =>0, 
 					"VotosInpugnados" => 0 ,"enEdicion" => "S" );
         // crear los valores.

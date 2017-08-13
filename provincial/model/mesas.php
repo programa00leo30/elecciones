@@ -68,7 +68,7 @@ class mesas extends EntidadBase{
 			return $this->__get($campo);
 		}
     }
-    public function estadistica_porlista($idDistrito,$idseccion,$idcircuito,$idElecion){
+    public function estadistica_porlista($idDistrito,$idcircuito,$idElecion){
 		// 
 		if ($idcircuito >= 0){
 			$ciudad = "idcircuito = '$idcircuito' and \n";
@@ -91,14 +91,15 @@ class mesas extends EntidadBase{
 	mesadetalle as d on m.id = d.idMesa
 where 
   $ciudad
-m.idDistrito = '$idDistrito' and
-	m.idseccion = '$idseccion' and
-m.idElecion ='$idElecion'  and
+m.idDistrito = '$idDistrito' and "
+//	m.idseccion = '$idseccion' and
+.
+" m.idElecion ='$idElecion'  and
 m.verificado = 1 
-
 group by m.idElecion , d.idlista, d.idCargo ;
 		";
 		$rt=$this->db()->query($query);
+		
 		if (!$rt){
 			// sin registro
 			return false;
@@ -123,7 +124,7 @@ group by m.idElecion , d.idlista, d.idCargo ;
 	
 	}
 
-    public function estadistica_totales( $idDistrito,$idseccion,$idcircuito,$idElecion){
+    public function estadistica_totales( $idDistrito,$idcircuito,$idElecion){
 		// fecha 	idcircuito 21	idseccion 7	idDistrito 20	MesasTomadas 	Votantes TotalVontantes 	VotosBlancos 	
 		// VotosNulos 	VotosRecurridos 	VotosInpugnados 
 		if ($idcircuito >= 0){
@@ -148,10 +149,10 @@ group by m.idElecion , d.idlista, d.idCargo ;
  from mesa as m 
 
 where 
- $ciudad
-m.idDistrito = '$idDistrito' and
-	m.idseccion = '$idseccion' and
-m.idElecion ='$idElecion' and
+ $ciudad 
+ m.idDistrito = '$idDistrito' and
+ " //	m.idseccion = '$idseccion' and
+."m.idElecion ='$idElecion' and
 m.verificado = 1 
 
 group by m.idElecion" ;
